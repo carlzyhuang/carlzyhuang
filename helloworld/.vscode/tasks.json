@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}/out" //默认进入启动文件的目录下的build目录
+    },
+    "tasks": [
+        {
+            "label": "clean",
+            "command": "ls",
+            "args": [
+                "-al"
+            ]
+        },
+        {
+            "label": "cmake",
+            
+            "command": "cmake",
+            "args": [
+                ".."
+            ],
+            "dependsOn":[
+                "clean"
+            ]
+        },
+        {
+            "label": "build",
+            "command": "make",
+            "args": [],
+            "dependsOn":[
+                "cmake"
+            ]
+        }
+    ]
+}

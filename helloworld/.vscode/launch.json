@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "name": "debug helloworld",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/${workspaceFolderBasename}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/out/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build"
+        }
+    ]
+}
